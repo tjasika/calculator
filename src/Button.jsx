@@ -4,7 +4,7 @@ export default function Button({ value, bg = "bg-indigo-100", text = "text-zinc-
         type={value === "=" ? "submit" : "button"}
       value={value}
       onClick={onClick}
-      className={`h-15 rounded-xl text-2xl hover:cursor-pointer ${bg} ${text}`}
+      className={`h-15 rounded-xl text-2xl hover:cursor-pointer ${bg} ${text} hover:shadow-lg`}
     />
   );
 }
