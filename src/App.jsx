@@ -36,7 +36,7 @@ function App() {
           <form>
 
             <div>
-              <input type="text" className="h-45 w-full outline-none bg-indigo-100 rounded-xl" />
+              <input readOnly type="text" className="h-45 w-full p-4 outline-none bg-indigo-100 rounded-xl text-right text-5xl text-main font-bold" />
             </div>
 
             <div className="pt-5 grid grid-cols-4 gap-2">
