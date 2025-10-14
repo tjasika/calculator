@@ -46,6 +46,8 @@ function App() {
                   value={button.value}
                   bg={button.bg}
                   text={button.text}
+                  type={button.value === "=" ? "submit" : "button"} // 👈 make "=" submit
+                        onClick={() => handleButtonClick(btn.value)}
                   ></Button>
               ))}
             </div>
