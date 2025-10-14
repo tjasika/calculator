@@ -49,8 +49,8 @@ function App() {
   return (
     <>
       <div className="w-screen h-screen bg-main flex flex-col justify-center items-center">
-        <h1 className="text-4xl text-indigo-50 font-bold">Hello World</h1>
 
+        <h1 className="text-4xl text-indigo-50 font-bold">Hello World</h1>
 
         <div className="bg-indigo-50 h-150 w-110 p-8 rounded-3xl">
           <form onSubmit={(e) => {
