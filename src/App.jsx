@@ -77,7 +77,7 @@ function App() {
           </form>
         </div>
         <footer className="mt-4 text-center text-sm text-gray-500">
-              <p>© Tjaša 2025 - Vaja RPO</p>
+              <p>© Tjaša 2025 - RPO Vaja 1 </p>
         </footer>
       </div>
     </>
