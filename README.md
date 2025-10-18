@@ -1,16 +1,17 @@
-# React + Vite
+# Calculator 🧮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was made as a part of a uni assignment, that required us to try out **Git**. I decided to build a simple calculator in React.js, but you'll see a bunch of test commits that have nothing to do with the calculator itself and were just a part of the assignment.
 
-Currently, two official plugins are available:
+### Components
+The app consists of only two components - **App.jsx and Button.jsx**.  
+The Button component receives 4 props: *value, bg, text and onClick*. That's because I decided to separate the operation buttons from the ones with numbers - hence the different colors. The rest of the project is in App.jsx - the main container, buttons displayed and, of course, the app logic. I put all the button information (values, background and text colors) in an array, then mapped through it in the main container. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Logic
+I am using a single state variable, which is \[value, setValue\]. The calculations are hnadled inside the handleClick(val) function - depending on the **val*  parameter it receives, it decides what to do with the value. All the buttons are passed this function as the *onClick* prop.
+We get the value through the main input box, by clicking on the calculator button (not by typing). 
 
-## React Compiler
+### Styling
+For the styling I used **TailwindCSS**, because I got used to it in the past few months and I find it really great - the only challenge was passing these classes into components dynamically.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Improvements
+This calculator works, but most definitely not optimally. For example, to enter a new calculation, the user must first delete the previous result etc. It also throws an error if the user types in unusual combinations like more than two zeroes on their own. Since this is a test project, I'll just ask you not to do that.
