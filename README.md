@@ -15,3 +15,6 @@ For the styling I used **TailwindCSS**, because I got used to it in the past few
 
 ### Improvements
 This calculator works, but most definitely not optimally. For example, to enter a new calculation, the user must first delete the previous result etc. It also throws an error if the user types in unusual combinations like more than two zeroes on their own. Since this is a test project, I'll just ask you not to do that.
+
+### Screenshot
+![Screenshot of the project](/screenshot.png)
