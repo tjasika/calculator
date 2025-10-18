@@ -36,7 +36,7 @@ function App() {
       setValue(value.slice(0, -1));
     } else if(val === "=") {
       try {
-        const result = eval(value.replace("×", "*").replace("÷", "/").replace("00", "0"));
+        const result = eval(value.replace("×", "*").replace("÷", "/"));
         setValue(result.toString());
       } catch {
         setValue("Error");
